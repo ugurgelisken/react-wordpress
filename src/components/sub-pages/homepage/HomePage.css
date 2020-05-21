@@ -1,0 +1,43 @@
+.comment-on-list{
+    margin-bottom: -12px !important;
+    font-size: 13px;
+}
+
+.comment-list{
+    display: inline-flex;
+    margin-left: -8px !important;
+}
+
+td, th{
+    padding:6px !important;
+    vertical-align: top !important;
+    text-align: center;
+}
+
+li, li a{
+    font-size:14px;
+    margin-bottom: 4px;
+}
+
+.comment-on-list{
+    cursor: default !important;
+}
+
+#books div img{
+    margin-bottom: 6px;
+}
+
+#books{
+   text-align: center;
+   line-height: 17px;
+}
+
+
+
+.comment-list time{
+    width: 250px;
+}
+
+.mt-1{
+    margin-top: -10px;
+}

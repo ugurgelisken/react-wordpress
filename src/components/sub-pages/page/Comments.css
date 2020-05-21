@@ -1,0 +1,51 @@
+.comments-title{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.comment-date{
+    font-size: 11px !important;
+    color: silver;
+    height: 5px;
+    margin-left: -10px;
+}
+
+.comment-author{
+    font-size: 16px;
+    font-weight: 600;
+    height: 10px;
+}
+
+.add-comment{
+    color: #6d6d6d;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.captcha_area{
+    display: flex;
+}
+
+#captcha{
+    margin-top: -2px;
+}
+
+.captcha_area input{
+   width: 80px;
+   margin-right: 10px;
+}
+
+.comment-title{
+    display: inline-flex;
+}
+
+
+.comment-title img{
+    height: 14px;
+    margin: 4px;
+}

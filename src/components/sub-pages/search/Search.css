@@ -1,0 +1,24 @@
+.search-box{
+    padding: 10px;
+    background-color: #ececec;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.search-box a p {
+    color: #1e1e1e;
+    margin-bottom: 0px;
+}
+
+.search-box a :hover {
+    opacity: 0.8;
+}
+
+h5{
+    font-size: 16px;
+}
+
+.border-left{
+   border-left: 1px solid #e2e2e2
+}

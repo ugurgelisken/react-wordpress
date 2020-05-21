@@ -1,0 +1,20 @@
+.right{
+ text-align: right;
+}
+
+.footer{
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px !important;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+.copy-right{
+    color: silver;
+    font-size: 13px;
+    padding-top:2px;
+}

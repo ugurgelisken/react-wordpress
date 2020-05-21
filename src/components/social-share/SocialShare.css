@@ -1,0 +1,15 @@
+img{
+    margin: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+img:hover {
+    opacity: 0.9;
+    border-radius: 8px;
+}
+
+.social-icons{
+    text-align: right;
+    margin-right: -2px;
+}

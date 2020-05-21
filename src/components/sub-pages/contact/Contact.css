@@ -1,0 +1,25 @@
+.form-text{
+    font-size: 15px !important;
+    color: red !important;
+}
+
+.sent-success{
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+
+.sent-success img{
+    width: 120px;
+    margin: 40px;
+}
+
+.sent-button-area{
+    text-align: right;
+    height: 50px;
+}
+
+.contact{
+    width: fit-content;
+    float: right;
+}

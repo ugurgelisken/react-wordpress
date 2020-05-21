@@ -1,0 +1,29 @@
+.right-side-box{
+ padding: 0px;
+}
+
+.category-item {
+    margin-bottom:1px;
+    cursor: pointer;
+    
+}
+
+.category-item a{
+    color: gray !important;
+    font-size: 13px;
+}
+
+.category-item:hover {
+  font-weight: 500;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .categories{
+    max-height: 100px;
+    overflow: scroll;
+    border-bottom: 1px solid silver;
+  }
+  
+}

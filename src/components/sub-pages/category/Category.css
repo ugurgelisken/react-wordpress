@@ -1,0 +1,13 @@
+.blok-box-content{
+    min-height: 10px !important;
+}
+
+.time-line{
+    min-height: 30px; 
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.border-silver{
+    border-color: 1px solid #e2e2e2;
+}

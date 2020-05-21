@@ -1,0 +1,173 @@
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body{
+    background-color: #e2e2e2;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .blog-box > a > h1 {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+
+  h1{
+    font-size: 22px;
+    color: #3e3e3e;
+    font-weight: 500;
+    margin-bottom: -6px;
+    margin-top: 10px;
+  }
+
+
+  article img{
+    width: 100% !important;
+  }
+  
+  h2{
+    font-size: 18px;
+    background-color: #e8e8e8;
+    padding: 10px;
+    font-weight: 400;
+  color: #3e3e3e;
+    margin-top: 10px;
+  }
+
+  h3{
+    font-size: 16px;
+    background-color: #e8e8e8;
+    padding: 10px;
+    font-weight: 400;
+    color: #3e3e3e;
+    margin-top: 10px;
+  }
+  
+  .wp-block-code, pre, pre > pre{
+    border: 1px solid #d0d0d0;
+    display: block;
+    padding: 10px;
+    font-family: 'Courier New', 'Courier New', monospace;
+    margin-bottom: 10px;
+    background-color: #efefef;
+    font-size: 12px;
+    overflow-y: auto;
+    margin-top: 10px;
+  }  
+  
+  ul{
+    list-style-type: none;
+  }
+
+  .li {
+    list-style: none;
+    background-image: url("./assets/tick.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-indent: 20px;
+  }
+
+  li a{
+    font-size: 15px;
+  }
+
+  li strong{
+    font-size: 15px;
+  }
+
+  a{
+    color: #4db5ff !important;
+  }
+
+  .wp-block-image img{
+    max-width: 100% !important;
+  }
+
+  figcaption{
+    font-size: 13px;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  html {
+    --scrollbarBG: rgb(204, 204, 204);
+    --thumbBG:#1e1e1e;
+  }
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 2px solid var(--scrollbarBG);
+  }
+
+
+  table{
+    width: 100% !important;
+    table-layout: fixed;
+    display:table;
+  }
+
+  .png-icon{
+    opacity: 0.8;
+  }
+
+
+  
+  .button-default{
+    color: white !important;
+    font-size: 16px;
+    background-color: #4db5ff !important;
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 8px;
+    cursor: pointer;
+
+  }
+
+
+
+
+.button-default:hover{
+  color: white !important;
+  padding: 10px 14px;
+  background-color: #7eabcc !important;
+}
+
+
+a{
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-break: anywhere;
+}
+
+h6{
+  color: #3e3e3e;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .wp-block-image img {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 10px !important;
+  }
+  
+}

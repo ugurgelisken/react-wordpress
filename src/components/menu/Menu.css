@@ -1,0 +1,69 @@
+
+.menu{
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    height: 60px;
+    overflow: hidden;
+}
+   
+.home-button{
+    height: 60px;
+    margin-left: -15px;
+    padding: 18px;
+    border-radius: 8px 0px 0px 8px;
+    background-color: #4db5ff;
+    cursor: pointer !important;
+    transition: 0.2s;
+    width: 60px;
+    max-width: 60px;
+    min-width: 60px;
+    overflow: hidden;
+}
+
+.home{
+    height: 22px;
+    cursor: pointer !important;
+}
+
+.home-button:hover{
+    background-color:#98d4ff;
+}
+
+.write-me{
+    border-radius: 18px;
+    background-color: #4db5ff;
+    color: white;
+    height: 36px;
+    cursor: pointer;
+    width: 130px;
+    padding: 6px;
+    padding-left: 18px;
+    padding-right: 12px;
+    margin-top: 12px;
+    float: right;
+    transition: 0.2s;
+}
+
+.write-me:hover{
+    background-color:#98d4ff;
+    width: 140px;
+}
+
+.write-me .circle {
+    height: 20px;
+    margin: 2px;
+    float: right;
+}
+
+.mobile-menu-icon{
+    width: 32px;
+    margin: 10px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99999;
+}

@@ -1,0 +1,18 @@
+.pageContent{
+    padding-top: 8px;
+}
+
+img{
+    cursor: default;
+    max-width: -webkit-fill-available;
+    height: auto;
+}
+
+.promoContent{
+    margin-bottom: -10px;
+}
+
+.promoContent:hover{
+    cursor: pointer !important;
+    opacity: 0.9;
+}

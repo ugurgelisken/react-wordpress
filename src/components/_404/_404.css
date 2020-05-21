@@ -1,0 +1,15 @@
+._404{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: rgb(54, 54, 54);
+}
+
+._404 h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+._404 p{
+    font-weight: 18px;
+}

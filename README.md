@@ -2,7 +2,7 @@
 
 ## React, Hooks and Wordpress REST API v2 Personel Website and Blog
 
-Bu proje, klasik Wordpress script'i üzerine geliştirilmiştir. Herhangi bir Wordpress web sayfası ve blog'u için rahatlıkla entegre edilebilir. 
+This project has been developed on the classic Wordpress script. Can be easily integrated for any Wordpress web page and blog.
 
 ## DEMO
 
@@ -12,44 +12,46 @@ https://www.ugurgelisken.com
 
 ![Demo Blog Page](https://www.linkpicture.com/q/demo_2.jpg)
 
-## ÖZELLİKLER (v1)
+## FEATURES (v1)
 
-- React 16+ ve Hooks kullanılarak geliştirilmiştir.
-- Klasik Wordpress yapısına mümkün olduğunca yakın bir yapı sunar, ancak tema ve plugin desteği yoktur.
-- Ana Sayfa, Hakkımda, Portfolio, Blog ve İletişim sayfalarını destekler, yeni sayfalar eklendiğinde gösterir.
-- Category ve Search ile desteklenmiştir.
-- Duyuru içerikleri sağ alt köşede ayrı gösterilir.
-- Tamamen mobil uyumludur. Responsive tasarım ile geliştirilmiştir ve PWA desteklidir.
-- SEO destekler!  Şu an Google Analtyics eklentis ile desteklenmiştir. Daha öncesinde eğer WordPress yayınlarınız varsa, onların arama motorlarındaki linkeri ile uyumludur, 404 sayfasına düşmez. Yeni girilen içerikler de arama motorları tarafından tespit edilebilir. Hatta şahsi deneyimim; klasik WordPress'e göre günlük ziyaretçi sayım ve Linkedin'den arkadaşlık istek sayım daha da arttı.
+- Developed using React 16+ and Hooks.
+- Client Side Rendering.
+- It offers a structure as close as possible to the classic Wordpress structure, but it does not support themes and plugins.
+- Supports Home, About Me, Portfolio, Blog and Communication pages, shows when new pages are added.
+- Supported by Category and Search.
+- Announcement contents are shown separately in the lower right corner.
+- It is fully mobile compatible. Developed with responsive design and PWA supported.
+- Supports SEO! It is currently supported by the Google Analtyics plugin. Previously, if you have WordPress posts, it is compatible with their link in search engines, not 404 pages. Newly entered content can also be detected by search engines. Even my personal experience; Compared to the classic WordPress, daily visitor count and friendship request count from Linkedin have increased even more.
 
-## GELİŞTİRME SÜRECİ (v2+)
-Şu an eksik gördüğüm kısımlar SEO. Bu konuda daha da geliştirmeler ve düzenlemeler yapılabilir.
-Arayüz biraz daha geliştirilebilir ve tema konusunda bir geliştirme yapılabilir.
-Karanlık mod özelliği eklenebilir.
-Performans geliştirmeleri yapılabilir.
-Varsa kodlamalardaki hatalar veya yanlış yöntemler düzeltilecek.
+## DEVELOPMENT PROCESS (v2+)
 
-## KURULUM
+- What I am missing now is SEO. Further developments and arrangements can be made in this regard.
+- The interface can be improved a little more and an improvement can be made on the theme.
+- Dark mode feature can be added.
+- Performance improvements can be made.
+- If there are any errors or wrong methods in the encodings will be corrected.
+
+## SETUP
 
 **npm install**
 
-Bu komut ile modülleri yükleyin.
+Load the modules with this command.
 
 **npm start**
 
-Bu komut ile localhost üzerinden projeyi çalıştırın.
+Run the project via localhost with this command.
 
 **npm build**
 
-Bu komut ile projeyi **/build** klasörü altında derleyin.
+Compile the project under the **/build** folder with this command.
 
-Proje, şu an www.ugurgelisken.com adresinde yer alan Wordpress içeriklerini çekmektedir.
+The project captures Wordpress content currently available at www.ugurgelisken.com
 
 ## DİL DESTEĞİ
 
-Dil paketi desteği ile arayüz metinleri değiştirilebilir.
+Interface support can be changed with language support.
 
-**./locales/tr/translation.json** dil paketini dilediğiniz gibi güncelleyebilirsiniz.
+**./locales/tr/translation.json** You can update the language package as you wish.
 
 {
     "title": "Uğur GELİŞKEN",
@@ -91,7 +93,7 @@ Dil paketi desteği ile arayüz metinleri değiştirilebilir.
 
 ## AYARLAR
 
-**./Config.js** ile global değişkenleri ve parametreleri tanımlayabilirsiniz.
+You can define global variables and parameters with **./Config.js**
 
 ```
 module.exports = global._ = {
@@ -129,38 +131,39 @@ module.exports = global._ = {
 
 ## AYARLARIN AÇIKLAMALARI
 
-**title**: Sayfanın başlığı.
-**originURL**: Web sayfanızın yayında olduğu URL.
-**baseURL**: WordPress API'lerinin kullanılacağı URL.
-**wpToken**: Entegresyan sürecinde 3. madddede anlatılıyor. React tarafından API'lere erişim için gereklidir.
-**perPageItem**: API çekilirken sayfada kaç içerik gösterileceği.
-**perPage20**: API çekilirken sayfada 20 içerik gösteirlmesi. Bazı sayfalarda 20 içerik çekiliyor. Mesela Category, Search.
-**perPage10**: API çekilirken sayfada 10 içerik gösteirlmesi. Bazı sayfalarda 10 içerik çekiliyor. Mesela Blog.
-**perPage5**: API çekilirken sayfada 5 içerik gösteirlmesi. Bazı sayfalarda 5 içerik çekiliyor. Mesela Son Yorumlar.
-**contactFormId**: Entegrasyon sürecinde 2. maddede anlatılıyor. React tarafında iletişim formunun Contact 7 Form ile entegrasyonu için gerekli.
-**specialPageSlugs**: Bir dizi içinde özel sayfaların API uzantılarını tanımlar. Örneğin ugurgelisken.com/about için WP JSON API'de slug=hakkimda olarak istek gönderilir. Bu kısımlar, WordPress tarafında hazırlanan Sayfa'lardır. Normalde WordPress'te oluşturulan her sayfa React tarafında web sayfasının menüsünde gösterilir. Ancak bazı sayfaların görünmesini istemeyiz. Mesela subpage, promo gibi sayfaları menüde istemiyoruz.
-**disabledCategorySlugs**: Post olarak eklediğimiz bazı kategorilerdeki içeriklerin de Category listesinde görünmesini istemeyebiliriz. Mesela "announcement" karegori slug'lı post içeriğini ayrı olarak sayfanın sağ alt köşesinde duyuru olarak göstermek için çekiyoruz. Ayrı bir içerik olduğu için bunun Category listesinde görünmesi abes kaçacaktır.
-**socialMediaURL**: Şahsi olarak sosyal medya hesapalarıma bağlantı vermek istedim. Bunları da bu alanda parametrik olarak tanımladım. Zorunlu değildir, arayüzden de ilgili bağlantı butonları kaldırılabilir.
+**title**: The title of the page.
+**originURL**: The URL where your web page is live.
+**baseURL**: The URL where WordPress APIs will be used..
+**wpToken**: It is described in the article 3 in the integration process. Required by React to access APIs.
+**perPageItem**: How many content will be shown on the page when the API is pulled.
+**perPage20**: Showing 20 content on the page when the API is pulled. Some pages have 20 content. For example Category, Search.
+**perPage10**: Showing 10 content on the page when the API is pulled. 10 pages are shot on some pages. Like Blog.
+**perPage5**: 5 content shown on the page when the API is pulled. Some pages have 5 content. For example Recent Comments.
+**contactFormId**: It is explained in the second article in the integration process. Required for the integration of the contact form with the Contact 7 Form on the React side.
+**specialPageSlugs**: Identifies API extensions of custom pages within an array. For example, for ugurgelisken.com/about, the request is sent as slug = about me in the WP JSON API. These sections are Pages prepared by WordPress. Normally, every page created in WordPress is shown by React on the menu of the web page. However, we do not want some pages to appear. For example, we do not want pages such as subpage and promo in the menu.
+**disabledCategorySlugs**: We may not want the contents of some categories we added as posts to appear in the Category list. For example, we shoot the post content with the "announcement" karegori slug to show as an announcement separately in the lower right corner of the page. Since it is a separate content, it will be absurd for it to appear in the Category list.
+**socialMediaURL**: I personally wanted to link to my social media accounts. I also defined them in this area parametrically. It is not mandatory, and the relevant connection buttons can be removed from the interface.
 
-## ENTEGRASYON SÜRECİ ADIMLARI
+## INTEGRATION PROCESS STEPS
 
-1. İlk olarak klasik Wordpress kurulumu yapılır ve "WP REST API v2" desteklediğinden emin olunur. Wordpress Admin sayfasından Plugins sayfasından kontrol edin. Yoksa yükleyin.
-E-posta gönderimi için "WP Mail SMTP" eklentisini kurun ve gerekli ayarlamaları yapın. Bu aşama, normal WordPress için de geçerlidir, yani yapılmazsa normal WordPress iletişim formları da çalışmaz.
+1. First, the classic Wordpress installation is made and it is ensured that it supports "WP REST API v2". Check it from Plugins page from Wordpress Admin page. Or install it.
+
+Install the "WP Mail SMTP" plugin for sending e-mails and make the necessary adjustments. This step also applies to normal WordPress, so normal WordPress contact forms won't work if it's not done.
 
 2. Herhangi bir üyelik gerektirmeden React tarafında eposta gönderilebilir. Bunun için "Contact form 7 to api" eklentisi kurulmalıdır. 
 
 Sonrasında da "Contact Form 7" eklentisini kurun. Ancak sürüm "5.1.4" olmasına dikkat edin! Daha üst sürümler desteklemez. Bir form oluşturun (Mesela [contact-form-7 id="2495" title="İletişim formu 1"]) ve bunun ID'sini bir yere not edin. Bu ID'yi Config.js'te contactFormId'de girin.
 
-3. "WordPress REST API Authentication" (Diğer ismi ile miniOrange API Authentication) eklentisini kurun. Böylece React tarafında herhangi bir üyelik gerektirmeden ziyaretçiler yorum yazabilecek ve bazı oturum açma gereksinimi hissetiren sayfalarla çalışılabilecek. 
+2. E-mail can be sent by React without any membership. For this, the "Contact form 7 to api" plugin must be installed.
 
-Eklentiyi kurduktan sonra Configure API Authentication sekmesine gidin ve API Key oluşturun. Bu key'i de React projemizde yer alan Config.js'te wpToken key'ine Bearer ile ekleyin. 
+Then install the "Contact Form 7" plugin. But make sure the version is "5.1.4"! Higher versions do not support. Create a form (eg [contact-form-7 id = "2495" title = "Contact form 1"]) and write down its ID. Enter this ID in contactFormId in Config.js.
 
-Protected REST APIs sekmesinde bütün API uç noktalarını serbest bırakın.
+Release all API endpoints in the Protected REST APIs tab.
 
-4. React tarafında projeyi kendinize göre uyarladıktan sonra "npm build" komutu ile derleyin. "index.html" içinde yer alan kodları kopyalayın ve WordPress'in kendi index.php dosyası içinde aşağıdaki gibi yapıştırarak düzenleyin. Upload ederken index.html dosyasını göndermenize gerek yoktur.
+4. On the React side, after compiling the project for you, compile it with the command "npm build". Copy the code contained in "index.html" and edit it by pasting it in WordPress's own index.php file as follows. You do not need to send the index.html file while uploading.
 
-5. Bütün dosyaları web sunucunuzda kök dizine (public_html) transfer edin. 
-
+ Transfer all the files to the root directory (public_html) on your web server.
+ 
 **index.php**
 
 ```
@@ -183,7 +186,7 @@ require( dirname( __FILE__ ) . '/wp-blog-header.php' );
 echo '<!doctype html><html lang="tr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><link rel="icon" href="/favicon.ico"/><link rel="icon" href="/assets/favicons/32x32.png" sizes="32x32"/><link rel="icon" href="/assets/favicons/192x192.png" sizes="192x192"/><link rel="apple-touch-icon-precomposed" href="/assets/favicons/180x180.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" href="/assets/reset.css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/><link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet"><link rel="manifest" href="/manifest.json"/><title></title><link href="/static/css/main.930ca7b5.chunk.css" rel="stylesheet"></head><body><noscript></noscript><div id="root"></div><script>!function(e){function r(r){for(var n,i,l=r[0],f=r[1],a=r[2],c=0,s=[];c<l.length;c++)i=l[c],Object.prototype.hasOwnProperty.call(o,i)&&o[i]&&s.push(o[i][0]),o[i]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&&(e[n]=f[n]);for(p&&p(r);s.length;)s.shift()();return u.push.apply(u,a||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,l=1;l<t.length;l++){var f=t[l];0!==o[f]&&(n=!1)}n&&(u.splice(r--,1),e=i(i.s=t[0]))}return e}var n={},o={1:0},u=[];function i(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,i),t.l=!0,t.exports}i.m=e,i.c=n,i.d=function(e,r,t){i.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,r){if(1&r&&(e=i(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(i.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)i.d(t,n,function(r){return e[r]}.bind(null,n));return t},i.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(r,"a",r),r},i.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},i.p="/";var l=this.webpackJsonpindex=this.webpackJsonpindex||[],f=l.push.bind(l);l.push=r,l=l.slice();for(var a=0;a<l.length;a++)r(l[a]);var p=f;t()}([])</script><script src="/static/js/2.b8fc6101.chunk.js"></script><script src="/static/js/main.8aa4d29d.chunk.js"></script></body></html>';
 ```
 
-6. **.htaccess** dosyasını aşağıdaki gibi düzenleyin. 
+6. Edit the **.htaccess** file as follows.
 
 ```
 <IfModule mod_rewrite.c>
@@ -213,9 +216,9 @@ RewriteRule ^(.) - [E=HTTP_AUTHORIZATION:%1]
 </IfModule>
 ```
 
-6. Son aşamada isterseniz artık WordPress dosyalarını temizleyebilirsiniz.
+6. In the final stage, you can now clean WordPress files if you want.
 
-## TAVSİYELER
+##ADVICES
 
-Ana sayfa için WordPress'te bir sayfa tasarlandı. Siz de ana sayfa görünümünü Config.js'te tanımlanan /home dizini ile yapabilirsiniz.
-Page ve Post'lara yorum için izin verebilir veya kaldırabilirsiniz. Bu durum React tarafına da yansır ve yorumlara erişim açılabilir veya kapatılabilir.
+- A page was designed in WordPress for the homepage. You can also make the homepage view with the / home directory defined in Config.js.
+- You can allow or remove Pages and Posts for comment. This is reflected on React's side and access to comments can be turned on or off.

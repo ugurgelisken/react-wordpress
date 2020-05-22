@@ -134,16 +134,27 @@ module.exports = global._ = {
 ## AYARLARIN AÇIKLAMALARI
 
 **title**: The title of the page.
+
 **originURL**: The URL where your web page is live.
+
 **baseURL**: The URL where WordPress APIs will be used..
+
 **wpToken**: It is described in the article 3 in the integration process. Required by React to access APIs.
+
 **perPageItem**: How many content will be shown on the page when the API is pulled.
+
 **perPage20**: Showing 20 content on the page when the API is pulled. Some pages have 20 content. For example Category, Search.
+
 **perPage10**: Showing 10 content on the page when the API is pulled. 10 pages are shot on some pages. Like Blog.
+
 **perPage5**: 5 content shown on the page when the API is pulled. Some pages have 5 content. For example Recent Comments.
+
 **contactFormId**: It is explained in the second article in the integration process. Required for the integration of the contact form with the Contact 7 Form on the React side.
+
 **specialPageSlugs**: Identifies API extensions of custom pages within an array. For example, for ugurgelisken.com/about, the request is sent as slug = about me in the WP JSON API. These sections are Pages prepared by WordPress. Normally, every page created in WordPress is shown by React on the menu of the web page. However, we do not want some pages to appear. For example, we do not want pages such as subpage and promo in the menu.
+
 **disabledCategorySlugs**: We may not want the contents of some categories we added as posts to appear in the Category list. For example, we shoot the post content with the "announcement" karegori slug to show as an announcement separately in the lower right corner of the page. Since it is a separate content, it will be absurd for it to appear in the Category list.
+
 **socialMediaURL**: I personally wanted to link to my social media accounts. I also defined them in this area parametrically. It is not mandatory, and the relevant connection buttons can be removed from the interface.
 
 ## INTEGRATION PROCESS STEPS

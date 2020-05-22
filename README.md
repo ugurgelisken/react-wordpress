@@ -8,9 +8,9 @@ Bu proje, klasik Wordpress script'i üzerine geliştirilmiştir. Herhangi bir Wo
 
 https://www.ugurgelisken.com
 
-![Demo Home Page](https://www.linkpicture.com/q/demo_1.jpg)](https://www.linkpicture.com/view.php?img=LPic5ec7761fbbe1a1010467393)
+![Demo Home Page](https://www.linkpicture.com/q/demo_1.jpg)
 
-![Demo Blog Page](https://www.linkpicture.com/q/demo_2.jpg)](https://www.linkpicture.com/view.php?img=LPic5ec7764b6a3ae234795982)
+![Demo Blog Page](https://www.linkpicture.com/q/demo_2.jpg)
 
 ## ÖZELLİKLER (v1)
 

@@ -47,7 +47,7 @@ Compile the project under the **/build** folder with this command.
 
 The project captures Wordpress content currently available at www.ugurgelisken.com
 
-## DİL DESTEĞİ
+## LANGUAGE SUPPORT
 
 Interface support can be changed with language support.
 
@@ -93,7 +93,7 @@ Interface support can be changed with language support.
 }
 ```
 
-## AYARLAR
+## SETTINGS
 
 You can define global variables and parameters with **./Config.js**
 
@@ -131,7 +131,7 @@ module.exports = global._ = {
 };
 ```
 
-## AYARLARIN AÇIKLAMALARI
+## DESCRIPTION OF THE SETTINGS
 
 **title**: The title of the page.
 
@@ -231,7 +231,7 @@ RewriteRule ^(.) - [E=HTTP_AUTHORIZATION:%1]
 
 6. In the final stage, you can now clean WordPress files if you want.
 
-##ADVICES
+## ADVICES
 
 - A page was designed in WordPress for the homepage. You can also make the homepage view with the / home directory defined in Config.js.
 - You can allow or remove Pages and Posts for comment. This is reflected on React's side and access to comments can be turned on or off.

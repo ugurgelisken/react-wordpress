@@ -133,16 +133,27 @@ module.exports = global._ = {
 ## AYARLARIN AÇIKLAMALARI
 
 **title**: Sayfanın başlığı.
+
 **originURL**: Web sayfanızın yayında olduğu URL.
+
 **baseURL**: WordPress API'lerinin kullanılacağı URL.
+
 **wpToken**: Entegresyan sürecinde 3. maddede anlatılıyor. React tarafından API'lere erişim için gereklidir.
+
 **perPageItem**: API çekilirken sayfada kaç içerik gösterileceği.
+
 **perPage20**: API çekilirken sayfada 20 içerik gösterilmesi. Bazı sayfalarda 20 içerik çekiliyor. Mesela Category, Search.
+
 **perPage10**: API çekilirken sayfada 10 içerik gösterilmesi. Bazı sayfalarda 10 içerik çekiliyor. Mesela Blog.
+
 **perPage5**: API çekilirken sayfada 5 içerik gösterilmesi. Bazı sayfalarda 5 içerik çekiliyor. Mesela Son Yorumlar.
+
 **contactFormId**: Entegrasyon sürecinde 2. maddede anlatılıyor. React tarafında iletişim formunun Contact 7 Form ile entegrasyonu için gerekli.
+
 **specialPageSlugs**: Bir dizi içinde özel sayfaların API uzantılarını tanımlar. Örneğin ugurgelisken.com/about için WP JSON API'de slug=hakkimda olarak istek gönderilir. Bu kısımlar, WordPress tarafında hazırlanan Sayfa'lardır. Normalde WordPress'te oluşturulan her sayfa React tarafında web sayfasının menüsünde gösterilir. Ancak bazı sayfaların görünmesini istemeyiz. Mesela subpage, promo gibi sayfaları menüde istemiyoruz.
+
 **disabledCategorySlugs**: Post olarak eklediğimiz bazı kategorilerdeki içeriklerin de Category listesinde görünmesini istemeyebiliriz. Mesela "announcement" kategori slug'lı post içeriğini ayrı olarak sayfanın sağ alt köşesinde duyuru olarak göstermek için çekiyoruz. Ayrı bir içerik olduğu için bunun Category listesinde görünmesi abes kaçacaktır.
+
 **socialMediaURL**: Şahsi olarak sosyal medya hesaplarıma bağlantı vermek istedim. Bunları da bu alanda parametrik olarak tanımladım. Zorunlu değildir, arayüzden de ilgili bağlantı butonları kaldırılabilir.
 
 ## ENTEGRASYON SÜRECİ ADIMLARI

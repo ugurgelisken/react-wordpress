@@ -23,11 +23,12 @@ https://www.ugurgelisken.com
 - SEO destekler!  Şu an Google Analtyics eklentis ile desteklenmiştir. Daha öncesinde eğer WordPress yayınlarınız varsa, onların arama motorlarındaki linkleri ile uyumludur, 404 sayfasına düşmez. Yeni girilen içerikler de arama motorları tarafından tespit edilebilir. Hatta şahsi deneyimim; klasik WordPress'e göre günlük ziyaretçi sayım ve Linkedin'den arkadaşlık istek sayım daha da arttı.
 
 ## GELİŞTİRME SÜRECİ (v2+)
-Şu an eksik gördüğüm kısımlar SEO. Bu konuda daha da geliştirmeler ve düzenlemeler yapılabilir.
-Arayüz biraz daha geliştirilebilir ve tema konusunda bir geliştirme yapılabilir.
-Karanlık mod özelliği eklenebilir.
-Performans geliştirmeleri yapılabilir.
-Varsa kodlamalardaki hatalar veya yanlış yöntemler düzeltilecek.
+
+- Şu an eksik gördüğüm kısımlar SEO. Bu konuda daha da geliştirmeler ve düzenlemeler yapılabilir.
+- Arayüz biraz daha geliştirilebilir ve tema konusunda bir geliştirme yapılabilir.
+- Karanlık mod özelliği eklenebilir.
+- Performans geliştirmeleri yapılabilir.
+- Varsa kodlamalardaki hatalar veya yanlış yöntemler düzeltilecek.
 
 ## KURULUM
 
@@ -51,6 +52,7 @@ Dil paketi desteği ile arayüz metinleri değiştirilebilir.
 
 **./locales/tr/translation.json** dil paketini dilediğiniz gibi güncelleyebilirsiniz.
 
+```
 {
     "title": "Uğur GELİŞKEN",
     "sub-title-1": "Frontend & Fullstack Developer",
@@ -88,6 +90,7 @@ Dil paketi desteği ile arayüz metinleri değiştirilebilir.
     "search_result_no": "Aranan kriterlere göre bir içerik bulunamadı.",
     "view": "incele"
 }
+```
 
 ## AYARLAR
 

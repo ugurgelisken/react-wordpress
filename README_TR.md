@@ -20,7 +20,7 @@ https://www.ugurgelisken.com
 - Category ve Search ile desteklenmiştir.
 - Duyuru içerikleri sağ alt köşede ayrı gösterilir.
 - Tamamen mobil uyumludur. Responsive tasarım ile geliştirilmiştir ve PWA desteklidir.
-- SEO destekler!  Şu an Google Analtyics eklentis ile desteklenmiştir. Daha öncesinde eğer WordPress yayınlarınız varsa, onların arama motorlarındaki linkeri ile uyumludur, 404 sayfasına düşmez. Yeni girilen içerikler de arama motorları tarafından tespit edilebilir. Hatta şahsi deneyimim; klasik WordPress'e göre günlük ziyaretçi sayım ve Linkedin'den arkadaşlık istek sayım daha da arttı.
+- SEO destekler!  Şu an Google Analtyics eklentis ile desteklenmiştir. Daha öncesinde eğer WordPress yayınlarınız varsa, onların arama motorlarındaki linkleri ile uyumludur, 404 sayfasına düşmez. Yeni girilen içerikler de arama motorları tarafından tespit edilebilir. Hatta şahsi deneyimim; klasik WordPress'e göre günlük ziyaretçi sayım ve Linkedin'den arkadaşlık istek sayım daha da arttı.
 
 ## GELİŞTİRME SÜRECİ (v2+)
 Şu an eksik gördüğüm kısımlar SEO. Bu konuda daha da geliştirmeler ve düzenlemeler yapılabilir.
@@ -132,15 +132,15 @@ module.exports = global._ = {
 **title**: Sayfanın başlığı.
 **originURL**: Web sayfanızın yayında olduğu URL.
 **baseURL**: WordPress API'lerinin kullanılacağı URL.
-**wpToken**: Entegresyan sürecinde 3. madddede anlatılıyor. React tarafından API'lere erişim için gereklidir.
+**wpToken**: Entegresyan sürecinde 3. maddede anlatılıyor. React tarafından API'lere erişim için gereklidir.
 **perPageItem**: API çekilirken sayfada kaç içerik gösterileceği.
-**perPage20**: API çekilirken sayfada 20 içerik gösteirlmesi. Bazı sayfalarda 20 içerik çekiliyor. Mesela Category, Search.
-**perPage10**: API çekilirken sayfada 10 içerik gösteirlmesi. Bazı sayfalarda 10 içerik çekiliyor. Mesela Blog.
-**perPage5**: API çekilirken sayfada 5 içerik gösteirlmesi. Bazı sayfalarda 5 içerik çekiliyor. Mesela Son Yorumlar.
+**perPage20**: API çekilirken sayfada 20 içerik gösterilmesi. Bazı sayfalarda 20 içerik çekiliyor. Mesela Category, Search.
+**perPage10**: API çekilirken sayfada 10 içerik gösterilmesi. Bazı sayfalarda 10 içerik çekiliyor. Mesela Blog.
+**perPage5**: API çekilirken sayfada 5 içerik gösterilmesi. Bazı sayfalarda 5 içerik çekiliyor. Mesela Son Yorumlar.
 **contactFormId**: Entegrasyon sürecinde 2. maddede anlatılıyor. React tarafında iletişim formunun Contact 7 Form ile entegrasyonu için gerekli.
 **specialPageSlugs**: Bir dizi içinde özel sayfaların API uzantılarını tanımlar. Örneğin ugurgelisken.com/about için WP JSON API'de slug=hakkimda olarak istek gönderilir. Bu kısımlar, WordPress tarafında hazırlanan Sayfa'lardır. Normalde WordPress'te oluşturulan her sayfa React tarafında web sayfasının menüsünde gösterilir. Ancak bazı sayfaların görünmesini istemeyiz. Mesela subpage, promo gibi sayfaları menüde istemiyoruz.
-**disabledCategorySlugs**: Post olarak eklediğimiz bazı kategorilerdeki içeriklerin de Category listesinde görünmesini istemeyebiliriz. Mesela "announcement" karegori slug'lı post içeriğini ayrı olarak sayfanın sağ alt köşesinde duyuru olarak göstermek için çekiyoruz. Ayrı bir içerik olduğu için bunun Category listesinde görünmesi abes kaçacaktır.
-**socialMediaURL**: Şahsi olarak sosyal medya hesapalarıma bağlantı vermek istedim. Bunları da bu alanda parametrik olarak tanımladım. Zorunlu değildir, arayüzden de ilgili bağlantı butonları kaldırılabilir.
+**disabledCategorySlugs**: Post olarak eklediğimiz bazı kategorilerdeki içeriklerin de Category listesinde görünmesini istemeyebiliriz. Mesela "announcement" kategori slug'lı post içeriğini ayrı olarak sayfanın sağ alt köşesinde duyuru olarak göstermek için çekiyoruz. Ayrı bir içerik olduğu için bunun Category listesinde görünmesi abes kaçacaktır.
+**socialMediaURL**: Şahsi olarak sosyal medya hesaplarıma bağlantı vermek istedim. Bunları da bu alanda parametrik olarak tanımladım. Zorunlu değildir, arayüzden de ilgili bağlantı butonları kaldırılabilir.
 
 ## ENTEGRASYON SÜRECİ ADIMLARI
 
@@ -151,7 +151,7 @@ E-posta gönderimi için "WP Mail SMTP" eklentisini kurun ve gerekli ayarlamalar
 
 Sonrasında da "Contact Form 7" eklentisini kurun. Ancak sürüm "5.1.4" olmasına dikkat edin! Daha üst sürümler desteklemez. Bir form oluşturun (Mesela [contact-form-7 id="2495" title="İletişim formu 1"]) ve bunun ID'sini bir yere not edin. Bu ID'yi Config.js'te contactFormId'de girin.
 
-3. "WordPress REST API Authentication" (Diğer ismi ile miniOrange API Authentication) eklentisini kurun. Böylece React tarafında herhangi bir üyelik gerektirmeden ziyaretçiler yorum yazabilecek ve bazı oturum açma gereksinimi hissetiren sayfalarla çalışılabilecek. 
+3. "WordPress REST API Authentication" (Diğer ismi ile miniOrange API Authentication) eklentisini kurun. Böylece React tarafında herhangi bir üyelik gerektirmeden ziyaretçiler yorum yazabilecek ve bazı oturum açma gereksinimi hissettiren sayfalarla çalışılabilecek. 
 
 Eklentiyi kurduktan sonra Configure API Authentication sekmesine gidin ve API Key oluşturun. Bu key'i de React projemizde yer alan Config.js'te wpToken key'ine Bearer ile ekleyin. 
 

@@ -53,6 +53,7 @@ Interface support can be changed with language support.
 
 **./locales/tr/translation.json** You can update the language package as you wish.
 
+```
 {
     "title": "Uğur GELİŞKEN",
     "sub-title-1": "Frontend & Fullstack Developer",
@@ -90,6 +91,7 @@ Interface support can be changed with language support.
     "search_result_no": "Aranan kriterlere göre bir içerik bulunamadı.",
     "view": "incele"
 }
+```
 
 ## AYARLAR
 

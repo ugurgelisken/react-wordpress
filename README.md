@@ -8,8 +8,6 @@ This project has been developed on the classic Wordpress script. Can be easily i
 
 https://www.ugurgelisken.com
 
-![Demo Home Page](https://www.linkpicture.com/q/demo_1.jpg)
-
 ![Demo Blog Page](https://www.linkpicture.com/q/demo_2.jpg)
 
 ## FEATURES (v1)
